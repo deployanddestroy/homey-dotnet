@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    
+    <PropertyGroup>
+      <UserSecretsId>6491e8bc-8f83-4608-b645-9b3ce4c45b12</UserSecretsId>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Http" />
+        <PackageReference Include="MailKit" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Serilog.AspNetCore" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Homey.Data\Homey.Data.csproj">
+        <Project>{e82d92ad-40b4-446e-8a21-3e7ccdf548aa}</Project>
+        <Name>Homey.Data</Name>
+      </ProjectReference>
+    </ItemGroup>
+
+</Project>
