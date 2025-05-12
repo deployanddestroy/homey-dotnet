@@ -9,8 +9,12 @@ public static class ConfigureApp
     {
         // Should be the first
         app.UseExceptionHandler();
-        
         app.UseSerilogRequestLogging();
+        
+        app.UseCors("AllowNuxtLocalhost");
+
+        app.UseAuthentication();
+        app.UseAuthorization();
         
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())

@@ -33,8 +33,6 @@ public class AddHome : IEndpoint
         await db.Homes.AddAsync(home, cancellationToken);
         await db.SaveChangesAsync(cancellationToken);
         
-        //TODO: send an event out
-        
         var response = new Response(home.Id, home.Name);
         return TypedResults.Created(response.Id.ToString(), response);
     }

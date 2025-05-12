@@ -32,6 +32,16 @@ public static class ConfigureServices
             .ReadFrom.Services(services)
             .Enrich.FromLogContext()
             .WriteTo.Console());
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowNuxtLocalhost", policy =>
+            {
+                policy
+                    .WithOrigins("http://localhost:3000", "https://localhost:3000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
+        });
     }
     
     /// <summary>
