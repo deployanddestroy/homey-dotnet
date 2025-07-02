@@ -10,6 +10,7 @@ public static class ConfigureApp
         // Should be the first
         app.UseExceptionHandler();
         app.UseSerilogRequestLogging();
+        app.UseHealthChecks("/health");
         
         app.UseCors("AllowNuxtLocalhost");
 

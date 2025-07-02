@@ -2,6 +2,7 @@
     
     <PropertyGroup>
       <UserSecretsId>6491e8bc-8f83-4608-b645-9b3ce4c45b12</UserSecretsId>
+      <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
     
     <ItemGroup>
@@ -20,6 +21,12 @@
         <Project>{e82d92ad-40b4-446e-8a21-3e7ccdf548aa}</Project>
         <Name>Homey.Data</Name>
       </ProjectReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>

@@ -42,6 +42,7 @@ public static class ConfigureServices
                     .AllowAnyMethod();
             });
         });
+        builder.Services.AddHealthChecks();
     }
     
     /// <summary>

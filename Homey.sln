@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D17B60
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		Readme.md = Readme.md
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{22F5E927-42D0-4F7D-A6A9-038F4A3F2594}"
+	ProjectSection(SolutionItems) = preProject
+		sql\Dockerfile = sql\Dockerfile
 	EndProjectSection
 EndProject
 Global
@@ -25,5 +31,8 @@ Global
 		{E82D92AD-40B4-446E-8A21-3E7CCDF548AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E82D92AD-40B4-446E-8A21-3E7CCDF548AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E82D92AD-40B4-446E-8A21-3E7CCDF548AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22F5E927-42D0-4F7D-A6A9-038F4A3F2594} = {D17B6018-E144-486C-BE99-518574E1B5A0}
 	EndGlobalSection
 EndGlobal
